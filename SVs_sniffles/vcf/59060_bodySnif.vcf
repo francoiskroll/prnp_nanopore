@@ -1,0 +1,40 @@
+##fileformat=VCFv4.1
+##source=Sniffles
+##fileDate=20210810:59:52 AMef_minus
+##contig=<ID=chr20,length=64444167>
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=INVDUP,Description="InvertedDUP with unknown boundaries">
+##ALT=<ID=TRA,Description="Translocation">
+##ALT=<ID=INS,Description="Insertion">
+##FILTER=<ID=UNRESOLVED,Description="An insertion that is longer than the read and thus we cannot predict the full size.">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the structural variant">
+##INFO=<ID=MAPQ,Number=1,Type=Integer,Description="Median mapping quality of paired-ends">
+##INFO=<ID=RE,Number=1,Type=Integer,Description="read support">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=PRECISE,Number=0,Type=Flag,Description="Precise structural variation">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Length of the SV">
+##INFO=<ID=SVMETHOD,Number=1,Type=String,Description="Type of approach used to detect SV">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SEQ,Number=1,Type=String,Description="Extracted sequence from the best representative read.">
+##INFO=<ID=STRANDS2,Number=4,Type=Integer,Description="alt reads first + ,alt reads first -,alt reads second + ,alt reads second -.">
+##INFO=<ID=REF_strand,Number=.,Type=Integer,Description="plus strand ref, minus strand ref.">
+##INFO=<ID=Strandbias_pval,Number=A,Type=Float,Description="P-value for fisher exact test for strand bias.">
+##INFO=<ID=STD_quant_start,Number=A,Type=Float,Description="STD of the start breakpoints across the reads.">
+##INFO=<ID=STD_quant_stop,Number=A,Type=Float,Description="STD of the stop breakpoints across the reads.">
+##INFO=<ID=Kurtosis_quant_start,Number=A,Type=Float,Description="Kurtosis value of the start breakpoints across the reads.">
+##INFO=<ID=Kurtosis_quant_stop,Number=A,Type=Float,Description="Kurtosis value of the stop breakpoints across the reads.">
+##INFO=<ID=SUPTYPE,Number=.,Type=String,Description="Type by which the variant is supported.(SR,AL,NR)">
+##INFO=<ID=STRANDS,Number=A,Type=String,Description="Strand orientation of the adjacency in BEDPE format (DEL:+-, DUP:-+, INV:++/--)">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency.">
+##INFO=<ID=ZMW,Number=A,Type=Integer,Description="Number of ZMWs (Pacbio) supporting SV.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DR,Number=1,Type=Integer,Description="# high-quality reference reads">
+##FORMAT=<ID=DV,Number=1,Type=Integer,Description="# high-quality variant reads">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	bamfilt/59060_f.bam
+chr20	4699380	0	N	GGTGGTGGCTGGGGGCAGCCTCATGGTGGTGGCTGGGGGCAGCCTCATGGTGGCGGCTGGGGGCAGCCTCATGGTGGTGGCTGGGGGCAGCCCCATGGTGGTGGCTGGGGACCTCATGGTGGTGGCTGGGGGCAGCCCCCAT	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4699380;STD_quant_start=3.122605;STD_quant_stop=3.981889;Kurtosis_quant_start=-0.862096;Kurtosis_quant_stop=-0.548632;SVTYPE=INS;SUPTYPE=AL;SVLEN=142;STRANDS=+-;STRANDS2=612,896,612,896;RE=1508;REF_strand=5308,7618;Strandbias_pval=0.739939;AF=0.116664	GT:DR:DV	0/0:11418:1508
+chr20	4699380	1	N	GGTGGGTAGCTGGGGGCAGCCTCAT	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4699380;STD_quant_start=4.477543;STD_quant_stop=5.162416;Kurtosis_quant_start=-1.170367;Kurtosis_quant_stop=-1.383447;SVTYPE=INS;SUPTYPE=AL;SVLEN=23;STRANDS=+-;STRANDS2=138,235,138,235;RE=373;REF_strand=5308,7618;Strandbias_pval=0.121498;AF=0.0288566	GT:DR:DV	0/0:12553:373
+chr20	4699439	2	N	GGGCAGCCTCATGGTGGTGGCTGGGGGGCAGCCCCATGGTAGTGGCTGGGGACAGCCTCATGGTGGCTGGGGGCAGCCCCATGGTGGTGGCTGGGGCAGCCTCATGGTGGTGGCTGGGGGCAGCCTCATGGTGGTGGCT	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4699439;STD_quant_start=1.811715;STD_quant_stop=8.335850;Kurtosis_quant_start=-1.100281;Kurtosis_quant_stop=-0.936864;SVTYPE=INS;SUPTYPE=AL;SVLEN=142;STRANDS=+-;STRANDS2=219,370,219,370;RE=589;REF_strand=5308,7618;Strandbias_pval=0.0653231;AF=0.0455671	GT:DR:DV	0/0:12337:589
+chr20	4699463	3	N	AAAAGCCCCATGGTAAGAGCTGGGGACAGCCTCATGGTGGCTGGGGGTCTCACAGGTGGCTGGGGGCAGCCTCATGGTGGTGGCTGGGGGCAGCCTCATGGTGGTGGCTGGGGCACCATGGCAGGTGC	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4699471;STD_quant_start=8.676392;STD_quant_stop=5.765260;Kurtosis_quant_start=-1.816939;Kurtosis_quant_stop=-1.415194;SVTYPE=INS;SUPTYPE=AL;SVLEN=118;STRANDS=+-;STRANDS2=311,412,311,412;RE=723;REF_strand=5308,7618;Strandbias_pval=0.312739;AF=0.0559338	GT:DR:DV	0/0:12203:723

@@ -1,0 +1,39 @@
+##fileformat=VCFv4.1
+##source=Sniffles
+##fileDate=20210810:56:43 AMef_minus
+##contig=<ID=chr20,length=64444167>
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=INVDUP,Description="InvertedDUP with unknown boundaries">
+##ALT=<ID=TRA,Description="Translocation">
+##ALT=<ID=INS,Description="Insertion">
+##FILTER=<ID=UNRESOLVED,Description="An insertion that is longer than the read and thus we cannot predict the full size.">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the structural variant">
+##INFO=<ID=MAPQ,Number=1,Type=Integer,Description="Median mapping quality of paired-ends">
+##INFO=<ID=RE,Number=1,Type=Integer,Description="read support">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=PRECISE,Number=0,Type=Flag,Description="Precise structural variation">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Length of the SV">
+##INFO=<ID=SVMETHOD,Number=1,Type=String,Description="Type of approach used to detect SV">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SEQ,Number=1,Type=String,Description="Extracted sequence from the best representative read.">
+##INFO=<ID=STRANDS2,Number=4,Type=Integer,Description="alt reads first + ,alt reads first -,alt reads second + ,alt reads second -.">
+##INFO=<ID=REF_strand,Number=.,Type=Integer,Description="plus strand ref, minus strand ref.">
+##INFO=<ID=Strandbias_pval,Number=A,Type=Float,Description="P-value for fisher exact test for strand bias.">
+##INFO=<ID=STD_quant_start,Number=A,Type=Float,Description="STD of the start breakpoints across the reads.">
+##INFO=<ID=STD_quant_stop,Number=A,Type=Float,Description="STD of the stop breakpoints across the reads.">
+##INFO=<ID=Kurtosis_quant_start,Number=A,Type=Float,Description="Kurtosis value of the start breakpoints across the reads.">
+##INFO=<ID=Kurtosis_quant_stop,Number=A,Type=Float,Description="Kurtosis value of the stop breakpoints across the reads.">
+##INFO=<ID=SUPTYPE,Number=.,Type=String,Description="Type by which the variant is supported.(SR,AL,NR)">
+##INFO=<ID=STRANDS,Number=A,Type=String,Description="Strand orientation of the adjacency in BEDPE format (DEL:+-, DUP:-+, INV:++/--)">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency.">
+##INFO=<ID=ZMW,Number=A,Type=Integer,Description="Number of ZMWs (Pacbio) supporting SV.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DR,Number=1,Type=Integer,Description="# high-quality reference reads">
+##FORMAT=<ID=DV,Number=1,Type=Integer,Description="# high-quality variant reads">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	bamfilt/55492_f.bam
+chr20	4699380	0	N	GGTGGTGCTGGGGGCAGCTCCTCATGGTGGTGGCTGGGGCAGCCCTCATGGTGGTGCTGGGGGCAGCCTCATGGTGGTGGCTGGGGGCAGCTCAT	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4699380;STD_quant_start=0.000000;STD_quant_stop=1.212150;Kurtosis_quant_start=47.606152;Kurtosis_quant_stop=0.885804;SVTYPE=INS;SUPTYPE=AL;SVLEN=95;STRANDS=+-;STRANDS2=527,483,527,483;RE=1010;REF_strand=6586,6988;Strandbias_pval=0.0264808;AF=0.074407	GT:DR:DV	0/0:12564:1010
+chr20	4699439	1	N	GGGGCAGCCTCATGGTGGTGGCTAGTGGGGCAGCCTCATGGTGGTGGCTGGGGGGCAGCCTCATGGTGGTGGCT	.	PASS	IMPRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4699439;STD_quant_start=9.853908;STD_quant_stop=10.140456;Kurtosis_quant_start=-1.876406;Kurtosis_quant_stop=131.667373;SVTYPE=INS;SUPTYPE=AL;SVLEN=94;STRANDS=+-;STRANDS2=982,1028,982,1028;RE=2010;REF_strand=6584,6988;Strandbias_pval=0.774238;AF=0.148099	GT:DR:DV	0/0:11562:2010
+chr20	4699391	2	N	GGGCAGCCTCATGATGGTGGCTGGGGGCAGCCTCATGGTGGTGGGCTAGCAGCTCATGGTGGTGGCTGGGGGCAGCCTCATGGTGGTGGCT	.	STRANDBIAS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4699391;STD_quant_start=0.738831;STD_quant_stop=3.772790;Kurtosis_quant_start=-1.032456;Kurtosis_quant_stop=-1.118477;SVTYPE=INS;SUPTYPE=AL;SVLEN=92;STRANDS=+-;STRANDS2=148,289,148,289;RE=437;REF_strand=6586,6988;Strandbias_pval=1.29225e-09;AF=0.0321939	GT:DR:DV	0/0:13137:437

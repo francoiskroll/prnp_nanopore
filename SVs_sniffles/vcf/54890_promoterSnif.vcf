@@ -1,0 +1,56 @@
+##fileformat=VCFv4.1
+##source=Sniffles
+##fileDate=20210811:25:06 AMef_minus
+##contig=<ID=chr20,length=64444167>
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=DUP,Description="Duplication">
+##ALT=<ID=INV,Description="Inversion">
+##ALT=<ID=INVDUP,Description="InvertedDUP with unknown boundaries">
+##ALT=<ID=TRA,Description="Translocation">
+##ALT=<ID=INS,Description="Insertion">
+##FILTER=<ID=UNRESOLVED,Description="An insertion that is longer than the read and thus we cannot predict the full size.">
+##INFO=<ID=CHR2,Number=1,Type=String,Description="Chromosome for END coordinate in case of a translocation">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the structural variant">
+##INFO=<ID=MAPQ,Number=1,Type=Integer,Description="Median mapping quality of paired-ends">
+##INFO=<ID=RE,Number=1,Type=Integer,Description="read support">
+##INFO=<ID=IMPRECISE,Number=0,Type=Flag,Description="Imprecise structural variation">
+##INFO=<ID=PRECISE,Number=0,Type=Flag,Description="Precise structural variation">
+##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Length of the SV">
+##INFO=<ID=SVMETHOD,Number=1,Type=String,Description="Type of approach used to detect SV">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=SEQ,Number=1,Type=String,Description="Extracted sequence from the best representative read.">
+##INFO=<ID=STRANDS2,Number=4,Type=Integer,Description="alt reads first + ,alt reads first -,alt reads second + ,alt reads second -.">
+##INFO=<ID=REF_strand,Number=.,Type=Integer,Description="plus strand ref, minus strand ref.">
+##INFO=<ID=Strandbias_pval,Number=A,Type=Float,Description="P-value for fisher exact test for strand bias.">
+##INFO=<ID=STD_quant_start,Number=A,Type=Float,Description="STD of the start breakpoints across the reads.">
+##INFO=<ID=STD_quant_stop,Number=A,Type=Float,Description="STD of the stop breakpoints across the reads.">
+##INFO=<ID=Kurtosis_quant_start,Number=A,Type=Float,Description="Kurtosis value of the start breakpoints across the reads.">
+##INFO=<ID=Kurtosis_quant_stop,Number=A,Type=Float,Description="Kurtosis value of the stop breakpoints across the reads.">
+##INFO=<ID=SUPTYPE,Number=.,Type=String,Description="Type by which the variant is supported.(SR,AL,NR)">
+##INFO=<ID=STRANDS,Number=A,Type=String,Description="Strand orientation of the adjacency in BEDPE format (DEL:+-, DUP:-+, INV:++/--)">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency.">
+##INFO=<ID=ZMW,Number=A,Type=Integer,Description="Number of ZMWs (Pacbio) supporting SV.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DR,Number=1,Type=Integer,Description="# high-quality reference reads">
+##FORMAT=<ID=DV,Number=1,Type=Integer,Description="# high-quality variant reads">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	promoterbamfilt/54890_f.bam
+chr20	4685105	0	CATTCTCCTGGCTTCTCC	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4685122;STD_quant_start=4.289522;STD_quant_stop=5.412947;Kurtosis_quant_start=-1.019736;Kurtosis_quant_stop=-1.094253;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-17;STRANDS=+-;STRANDS2=13,2,13,2;RE=15;REF_strand=18326,3569;Strandbias_pval=1;AF=0.000685088	GT:DR:DV	0/0:21880:15
+chr20	4685224	1	TTTTTTTTTTT	N	.	STRANDBIAS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4685235;STD_quant_start=0.272166;STD_quant_stop=1.433721;Kurtosis_quant_start=0.282939;Kurtosis_quant_stop=0.035096;SVTYPE=DEL;SUPTYPE=AL,NR;SVLEN=-11;STRANDS=+-;STRANDS2=76,32,76,32;RE=108;REF_strand=18346,3626;Strandbias_pval=0.000644664;AF=0.00491535	GT:DR:DV	0/0:21864:108
+chr20	4685224	2	N	TTTTTTTTTTTTTTTTT	.	STRANDBIAS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4685224;STD_quant_start=0.000000;STD_quant_stop=1.173273;Kurtosis_quant_start=118.182024;Kurtosis_quant_stop=0.432347;SVTYPE=INS;SUPTYPE=AL;SVLEN=11;STRANDS=+-;STRANDS2=478,1,478,1;RE=479;REF_strand=18346,3622;Strandbias_pval=1.6746e-35;AF=0.0218044	GT:DR:DV	0/0:21489:479
+chr20	4685335	3	TCCTGGGCTCAAGCAA	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4685353;STD_quant_start=7.720104;STD_quant_stop=7.106335;Kurtosis_quant_start=-1.615714;Kurtosis_quant_stop=-1.840625;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-18;STRANDS=+-;STRANDS2=16,4,16,4;RE=20;REF_strand=18364,3654;Strandbias_pval=0.761636;AF=0.000908348	GT:DR:DV	0/0:21998:20
+chr20	4685413	4	N	TTTTTTTATTTTTTTTT	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4685418;STD_quant_start=0.000000;STD_quant_stop=4.330127;Kurtosis_quant_start=0.106287;Kurtosis_quant_stop=-1.121079;SVTYPE=INS;SUPTYPE=AL;SVLEN=12;STRANDS=+-;STRANDS2=22,3,22,3;RE=25;REF_strand=18364,3666;Strandbias_pval=0.787639;AF=0.00113482	GT:DR:DV	0/0:22005:25
+chr20	4685636	5	ATGCCTGGTTTACGCCCATTTCACTTT	N	.	PASS	IMPRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4685658;STD_quant_start=10.108502;STD_quant_stop=10.689842;Kurtosis_quant_start=-2.134898;Kurtosis_quant_stop=-2.081137;SVTYPE=DEL;SUPTYPE=AL,NR;SVLEN=-22;STRANDS=+-;STRANDS2=19,4,19,4;RE=23;REF_strand=18364,3689;Strandbias_pval=1;AF=0.00104294	GT:DR:DV	0/0:22030:23
+chr20	4685922	6	AAGGAACAGGTGA	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4685941;STD_quant_start=9.974969;STD_quant_stop=9.027735;Kurtosis_quant_start=-1.779021;Kurtosis_quant_stop=-1.955366;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-19;STRANDS=+-;STRANDS2=20,1,20,1;RE=21;REF_strand=18359,3744;Strandbias_pval=0.237831;AF=0.000950097	GT:DR:DV	0/0:22082:21
+chr20	4686077	7	CATTCCTGAGC	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4686089;STD_quant_start=2.420153;STD_quant_stop=3.070598;Kurtosis_quant_start=-1.532909;Kurtosis_quant_stop=-1.661156;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-12;STRANDS=+-;STRANDS2=26,3,26,3;RE=29;REF_strand=17914,3781;Strandbias_pval=0.461689;AF=0.00133671	GT:DR:DV	0/0:21666:29
+chr20	4686285	8	GCTGCACCCTTTAACTT	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4686302;STD_quant_start=5.449771;STD_quant_stop=9.433981;Kurtosis_quant_start=-1.207131;Kurtosis_quant_stop=-1.518644;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-17;STRANDS=+-;STRANDS2=16,0,16,0;RE=16;REF_strand=16888,3808;Strandbias_pval=0.0558011;AF=0.000773096	GT:DR:DV	0/0:20680:16
+chr20	4686326	9	GGGGGCACAGAGTGTGCGCCGGGCCGCGCGGCAATTGGTCCCCGCGCCGACCTCCGCCCGCGAGCGCCGCCGCTTCCCTTCCCCGCCCCGCGTCCCTCCCCCTCGGCCCCGCGCGTCGCCTGTCCTCCGAGCCAGTCGCTGACAGCCGCGGCGCCGCGAGCTTCTCCTCTCCTCACGACCGAGGCAGGTAAACGCCCGGGGTGGGAGGAACGCGGGCGGGGGCAGGGGAGCCGCGGGGGCCGAGTGAGGACCCCGGGCCTCGGGTCCCAGGCGCAAGGGTGCCCGGCCGGGCGGGGTCGGGACCCCAGTGAGGAGGGGCCGGGGGCTGCCCCGCGGGCGCGTGACGCGTCTCGGGCCTGCCCGGCTGCGCTGGTCTCCGCTCGGGTGAGGCGGCTTGGCTTCGCTTTTCAGGTTAGGAAAGCTCCCTTTACTGCGCGTTGGGGGGCTGGGGGAGCTGGCGGAGCCCCGTTAGGGAGGTCGGTGGCGCCGGGGTGTCTCAGCGCCCCCTGCACCCCGCGCGGGTCCGGCCCAGCGGGCGATCGCTGGCGCCCAGGGAACTCCGGGAGGGCCGCCAGCGGGCTCCGCAGGGCGCGGGGCGGGGAGGGGCGCCTGGGGGCCGCGGGGCTCGCGCTCCCCGCCCGTTGGCCGCCCCTCGGAGGCCGAGATCGGGGCCCAGAACGCCCCTTGGCAAGGCCTGGCGCTTCCGCGATGCCCAGAGGGTGCTTGGGGGGATGGAGAGAGGGGCGCCCGCCG	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4687079;STD_quant_start=0.258199;STD_quant_stop=0.632456;Kurtosis_quant_start=-0.133747;Kurtosis_quant_stop=1.961346;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-753;STRANDS=+-;STRANDS2=72,19,72,19;RE=91;REF_strand=15964,3917;Strandbias_pval=0.791562;AF=0.00457723	GT:DR:DV	0/0:19790:91
+chr20	4686402	10	CCTTCCCCGCCCCG	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4686416;STD_quant_start=6.244998;STD_quant_stop=5.735852;Kurtosis_quant_start=-1.359155;Kurtosis_quant_stop=-1.448161;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-14;STRANDS=+-;STRANDS2=13,4,13,4;RE=17;REF_strand=16311,3831;Strandbias_pval=0.548157;AF=0.000844008	GT:DR:DV	0/0:20125:17
+chr20	4686485	11	GCTTCTCCTCT	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4686497;STD_quant_start=2.801099;STD_quant_stop=3.281651;Kurtosis_quant_start=-1.259969;Kurtosis_quant_stop=-1.212943;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-12;STRANDS=+-;STRANDS2=21,5,21,5;RE=26;REF_strand=16013,3845;Strandbias_pval=1;AF=0.0013093	GT:DR:DV	0/0:19832:26
+chr20	4686550	12	GGCAGGGGAGCCGCGGGGGCCGAGT	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4686569;STD_quant_start=6.300183;STD_quant_stop=4.930283;Kurtosis_quant_start=-1.466767;Kurtosis_quant_stop=-0.984135;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-19;STRANDS=+-;STRANDS2=22,4,22,4;RE=26;REF_strand=15843,3857;Strandbias_pval=0.80497;AF=0.0013198	GT:DR:DV	0/0:19674:26
+chr20	4686577	13	CCCAGGCGCAAGGGTGC	N	.	PASS	IMPRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4686602;STD_quant_start=9.731393;STD_quant_stop=12.980755;Kurtosis_quant_start=-0.311769;Kurtosis_quant_stop=0.177570;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-25;STRANDS=+-;STRANDS2=8,3,8,3;RE=11;REF_strand=15807,3863;Strandbias_pval=0.460894;AF=0.000559227	GT:DR:DV	0/0:19659:11
+chr20	4686996	14	CCCAGAACGCC	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4687009;STD_quant_start=4.254409;STD_quant_stop=4.939636;Kurtosis_quant_start=2.413177;Kurtosis_quant_stop=1.904659;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-13;STRANDS=+-;STRANDS2=14,0,14,0;RE=14;REF_strand=15318,3981;Strandbias_pval=0.0894387;AF=0.000725426	GT:DR:DV	0/0:19285:14
+chr20	4687275	15	GTCCGGGGAGGCCCCA	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=4687289;STD_quant_start=5.707797;STD_quant_stop=5.712406;Kurtosis_quant_start=-1.418827;Kurtosis_quant_stop=-1.368105;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-14;STRANDS=+-;STRANDS2=27,12,27,12;RE=39;REF_strand=15120,4050;Strandbias_pval=0.166827;AF=0.00203443	GT:DR:DV	0/0:19131:39
+chr20	11733671	16	N	TTGTATGGCAAAGGACACAAACAGATACCTCAAAAGAAGATATGCAAGCAGCCAAAAATAATATGAGAAAAGATGCTCAGAATCTCTAAGGAGATTAGAGAAATGCAAATCAAAACCACAATGAAATATTATCTCATACCAGTCAGTA	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=11733671;STD_quant_start=0.000000;STD_quant_stop=1.328422;Kurtosis_quant_start=-1.015127;Kurtosis_quant_stop=-0.604761;SVTYPE=INS;SUPTYPE=AL;SVLEN=147;STRANDS=+-;STRANDS2=31,4,31,4;RE=35;REF_strand=66,10;Strandbias_pval=1;AF=0.460526	GT:DR:DV	0/1:41:35
+chr20	29408716	17	N	CTTCCGTTTCTCATCTT	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=29408716;STD_quant_start=0.000000;STD_quant_stop=1.015038;Kurtosis_quant_start=5.651267;Kurtosis_quant_stop=4.624591;SVTYPE=INS;SUPTYPE=AL;SVLEN=18;STRANDS=+-;STRANDS2=31,35,31,35;RE=66;REF_strand=116,140;Strandbias_pval=0.889921;AF=0.257812	GT:DR:DV	0/0:190:66
+chr20	29409484	18	GGGCCGCTGAGCGCCCCGCTGGCCAAAGGGGCTGT	N	.	PASS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=29409519;STD_quant_start=0.000000;STD_quant_stop=0.000000;Kurtosis_quant_start=2.050488;Kurtosis_quant_stop=1.465342;SVTYPE=DEL;SUPTYPE=AL;SVLEN=-35;STRANDS=+-;STRANDS2=32,39,32,39;RE=71;REF_strand=116,140;Strandbias_pval=1;AF=0.277344	GT:DR:DV	0/0:185:71
+chr20	43260043	19	N	TTTTTTTTTTTTTTTT	.	STRANDBIAS	PRECISE;SVMETHOD=Snifflesv1.0.12;CHR2=chr20;END=43260045;STD_quant_start=0.000000;STD_quant_stop=5.176872;Kurtosis_quant_start=7.000000;Kurtosis_quant_stop=1.701010;SVTYPE=INS;SUPTYPE=AL;SVLEN=11;STRANDS=+-;STRANDS2=11,0,11,0;RE=11;REF_strand=102,428;Strandbias_pval=2.2125e-08;AF=0.0207547	GT:DR:DV	0/0:519:11
