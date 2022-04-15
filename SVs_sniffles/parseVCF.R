@@ -31,7 +31,7 @@ poolColumns <- function(dataframe, vectorOfColNames) {
 # import metadata ---------------------------------------------------------
 
 # import metadata
-meta <- read.xlsx(here('supplementary.xlsx'), sheet='samples')
+meta <- read.xlsx(here('AdditionalFile1.xlsx'), sheet='samples')
 
 # format meta
   # - >> NA
