@@ -14,6 +14,12 @@ Below explains how to recreate the analyses.
 
 Please cite if you use some of the data or code.  
 
+Are you reading this README on GitHub? Find Zenodo archive containing most of the data at https://doi.org/10.5281/zenodo.6427185.  
+
+Did you get this README from the Zenodo archive? Please find code at GitHub repositories
+* https://github.com/athanadd/prnp-nanopore-seq
+* https://github.com/francoiskroll/prnp_nanopore
+
 ___
 
 Get in touch for questions
