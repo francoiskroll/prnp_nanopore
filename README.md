@@ -33,6 +33,16 @@ Get in touch for questions
 
 ___
 
+## about fast5/fastq/bam sequencing data
+
+fast5 files were too heavy to upload even for Zenodo. Please get in touch if you would like to access them.  
+
+fastq files (i.e. after basecalling) are available at the Zenodo archive https://doi.org/10.5281/zenodo.6427185, folder /fastq/.  
+
+bam files (i.e. after alignment to human reference genome hg38) are available at the Zenodo archive https://doi.org/10.5281/zenodo.6427185, folders /genebodyBams/ and /promoterBams/.  
+
+___
+
 ## about .command bash scripts
 
 I used macOS.  
